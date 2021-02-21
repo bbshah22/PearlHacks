@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Buddies</title>
+<link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<style>
+  * {
+    text-align: center;
+    font-family: 'Unica One', cursive;
+    font-size: 120%;
+  }
+  section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 20px;
+      height: 100%;
+      width: auto;
+  }
+  img {
+      height: 300px;
+      width: auto;
+      object-fit: cover;
+  }
+  .notific {
+      background-color: #FFA69E;
+      padding: 10px;
+      border-radius: 5px;
+  }
+  .screenTime {
+      background-color: #FFA69E;
+      /* padding: 2px; */
+      border-radius: 5px;
+  }
+.right {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+}
+
+.messages {
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px black solid;
+    margin: 5px;
+}
+
+  </style>
+
+  <body>
+    <a href = "/"><button style="font-size: xx-large; float: left;">Home</button></a>
+    <section>
+        <article class = "left">
+            <div class = "person">
+                <article><img src="https://pbs.twimg.com/profile_images/1296816250526380033/wv9HHwn1.jpg" alt="Pearl Hacks logo"></article>
+                <h3>Bhuvni</h3>
+              </div>
+        </article>
+        <article class = right>
+            <div class = "top">
+                <h3 class = "notific">Notifications from Bhuvni</h3>
+             <div class = "messages"><h3> Hi! Walk at 5pm?</h3></div>
+             <div class = "messages"><h3> Bhuvni has spend 7+ hours on...</h3></div>
+            </div>
+            <div class = "bottom">
+             <div class = "screenTime"><h3>Bhuvni's Screen Time Log</h3></div>
+             <div class = "timeImg"><img src = "https://i.imgur.com/oxG8gaI.png" alt = "Screen time display"></div>
+            </div>
+        </article>
+    </section>
+
+
+  </body>
+  </html>

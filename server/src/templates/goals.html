@@ -134,6 +134,12 @@ a {
   float: left;
 }
 
+.time {
+display: flex;
+flex-direction: column;
+
+}
+
 </style>
 </head>
 
@@ -152,11 +158,18 @@ a {
 
   </ul> 
 
-  <h2>Enter end of working hours: </h2>
+  
+  <div class = "time">
+    {% if time %}
+    <h2> My working hours end at {{time}}:00 pm today. </h2>
+    {% endif %}
+    <h3>Enter end of working hours: </h3>
   <form method="POST">
     <input  class = "input" name="text">
     <input type="submit">
   </form>
+ 
+</div>
   <script>
     var myObj = [];
   // Create a "close" button and append it to each list item

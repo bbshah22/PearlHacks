@@ -27,7 +27,7 @@
         width: 100%;
         height: 100%;
     }
-    .row{
+    #con{
         height: 100%;
     }
     #outer{
@@ -36,29 +36,37 @@
 a {
   float: left;
 }
-    
+.h1{
+    font-family: 'Unica One', cursive;
+}
+#header{
+    margin: 10pt;
+}
 </style>
 
 </head>
 
 <body>
-    <a href = "/"><button style="font-size: xx-large;">Home</button></a>
-  <h1>Cooling History</h1>
-    <div class="container">
+    <div class = "row" id = "header">
+  <div><a href = "/"><button style="font-size: xx-large;">Home</button></a> </div>
+  <div><h1 style="font-family: 'Unica One', cursive">Cooling History</h1> </div>
+    </div>
+  
+  <div class="container">
         
-        <div class="row">
-          <div class="col-sm-4" style="background-color:#B8B8FF;">
-            <p>Insert image of icon?</p>
+        <div class="row" id = "con">
+          <div class="col-sm-4" style="background-color:#B8B8FF; align-items: flex-end;">
+            <a href="/buddies"><img src="https://i.imgur.com/jbeJz1g.png" title="source: imgur.com" width="100%"/></a>
           </div>
           <div class="col-sm-8" style="background-color:#FFA69E;">
-            <div class="list-group">
+            <div class="list-group" style="display: flex; flex-direction: column;">
                 <a href="#" class="list-group-item">
                   <h4 class="list-group-item-heading">From Gurleen</h4>
-                  <p class="list-group-item-text">I hope you take some time to go on a walk today!</p>
+                  <p class="list-group-item-text">I hope you take some time to go on a walk today! ou have worked so hard and you deserve a break!</p>
                 </a>
                 <a href="#" class="list-group-item">
                   <h4 class="list-group-item-heading">From You</h4>
-                  <p class="list-group-item-text">Step away and get some water!</p>
+                  <p class="list-group-item-text">Step away and get some water! Being Hydrated is half the battle and I know you can do it!</p>
                 </a>
                 <a href="#" class="list-group-item">
                   <h4 class="list-group-item-heading">From Burnout Burnout</h4>
