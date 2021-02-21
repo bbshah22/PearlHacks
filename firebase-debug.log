@@ -1,0 +1,21 @@
+[debug] [2021-02-21T00:36:27.891Z] ----------------------------------------------------------------------
+[debug] [2021-02-21T00:36:27.892Z] Command:       /usr/local/bin/firebase /Users/bhuvnishah/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2021-02-21T00:36:27.893Z] CLI Version:   9.4.0
+[debug] [2021-02-21T00:36:27.893Z] Platform:      darwin
+[debug] [2021-02-21T00:36:27.893Z] Node Version:  v12.18.1
+[debug] [2021-02-21T00:36:27.894Z] Time:          Sat Feb 20 2021 18:36:27 GMT-0600 (Central Standard Time)
+[debug] [2021-02-21T00:36:27.894Z] ----------------------------------------------------------------------
+[debug] [2021-02-21T00:36:27.894Z] 
+[debug] [2021-02-21T00:36:27.899Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-21T00:36:27.899Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/bhuvnishah/Desktop/PearlHacks
+
