@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Check-In</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="check_in.css">
+<style>
+  .parent {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+  padding: 50px;
+  content: 10px;
+}
+#overworked{
+  margin: 10px;
+  padding: 20px;
+  border: 3px #a0e884 solid;
+  width: auto;
+  height: auto;
+  font-size: large;
+  text-align: center;
+}
+
+#tired {
+  margin: 10px;
+  padding: 20px;
+  border: 3px #a0e884 solid;
+  width: auto;
+  height: auto;
+  font-size: large;
+  text-align: center;
+} 
+
+#break  {
+  margin: 10px;
+  padding: 20px;
+  border: 3px #a0e884 solid;
+  width: auto;
+  height: auto;
+  font-size: large;
+  text-align: center;
+}
+
+#content {
+  margin: 10px;
+  padding: 20px;
+  border: 3px #a0e884 solid;
+  width: auto;
+  height: auto;
+  font-size: large;
+  text-align: center;
+} 
+
+#great {
+  margin: 10px;
+  padding: 20px;
+  border: 3px #a0e884 solid;
+  width: auto;
+  height: auto;
+  font-size: large;
+  text-align: center;
+} 
+span {
+  margin: 10px;
+  padding: 20px;
+  border: 3px #6CCFF6 solid;
+  width: 100px;
+  height: auto;
+  font-size: large;
+  text-align: center;
+}
+* {
+  text-align: center;
+  font-family: 'Unica One', cursive;
+}
+body {
+  background-color: rgb(218, 211, 255, 0.5);
+}
+
+.tips {
+  display: flex;
+	flex-direction: row;
+  flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+  padding: 50px;
+  content: 10px;
+}
+
+a {
+  float: left;
+}
+
+.head {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+</style>
+</head>
+
+<body>
+  <div class = "head">
+    <a href = "/"><button style="font-size: xx-large;">Home</button></a>
+  <h1> How am I feeling?</h1>
+  </div>
+  <div class = "parent">
+    <button  id = "overworked"><div class = "feeling" >Overworked</div></button>
+    <button  id = "tired"><div class = "feeling">Tired</div></button>
+    <button  id = "break"><div class = "feeling">In need of a break</div></button>
+   <button  id = "content"><div class = "feeling">Content</div></button>
+   <button id="great"><div class = "feeling">Pretty great</div></button>
+  </div>
+  <section class="card-container">
+  </section>
+
+  <h2 id="e21_61">Small steps I can take to feel better:</h2>
+  <section class = "tips">
+    <span>Refill water</span><span id="e21_68">Grab a snack</span>
+    <span>Meditate</span><span id="e21_63">Exercise</span>
+    <span>Talk with a friend</span><span id="e21_65">Walk outside</span>
+    <span>Turn off screens</span>
+    
+  </section>
+
+  <script>
+    var cardContainer = $('.card-container');
+    var overworked = $('#overworked');
+    var tired = $('#tired');
+    var needBreak = $('#break');
+    var content = $('#content');
+    var prettyG = $('#great');
+
+    prettyG.on("click", appendGreat);
+
+    function appendGreat() {
+      var greatArr = ["Make a plan for something you've always wanted to try!", 
+                      "Share your joy with someone else!", "Make plans with a friend or relative!"];
+      var element = Math.random() * 2;
+      element = Math.round(element);
+      var tip = greatArr[element];
+      cardContainer.html(`<div class='card'>${tip}</div>`)
+
+    }
+
+    </script>
+
+</body>
+</html>

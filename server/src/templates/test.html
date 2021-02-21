@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create four equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
+            height: 100%;
+            text-align: center;
+
+            /* height: 300px; Should be removed. Only for demonstration */
+        }
+
+        /* If the text has multiple lines, add the following: */
+        .column p {
+            line-height: 1.5;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        h2 {
+            font-family: 'Unica One', cursive;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+    <div class="row">
+
+        <a href="/buddies">
+            <div class="column" style="background-color:#B8B8FF;">
+                <h2>BUDDIES</h2>
+                <a href="/buddies"><img src="https://i.imgur.com/jbeJz1g.png" title="source: imgur.com" /></a>
+            </div>
+        </a>
+
+        <a href="/goals">
+            <div class="column" style="background-color:#A7E2FA;">
+                <h2>GOALS</h2>
+            </div>
+        </a>
+
+        <a href="/check_in">
+            <div class="column" style="background-color:#FFA69E;">
+                <h2>FEELINGS</h2>
+                <a href="/check_in"><img src="https://i.imgur.com/I1LFLYE.png" title="source: imgur.com" /></a>
+            </div>
+        </a>
+
+        <a href="/notific_log">
+            <div class="column" style="background-color:#CBE3BF;">
+                <h2>Notifications</h2>
+            </div>
+        </a>
+
+    </div>
+
+</body>
+
+</html>

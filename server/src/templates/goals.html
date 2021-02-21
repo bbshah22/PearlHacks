@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Title of the document</title>
+<title>Goals</title>
+<link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ url_for('static', filename='goals.css') }}">
 <style>
   /* Include the padding and border in an element's total width and height */
 * {
 box-sizing: border-box;
+font-family: 'Unica One', cursive;
 }
 
 /* Remove margins and padding from the list */
@@ -119,12 +121,29 @@ border-radius: 0;
 .addBtn:hover {
 background-color: #bbb;
 }
+
+button {
+  position: sticky;
+}
+
+.input {
+  border: 2px #B8B8FF solid;
+}
+
+a {
+  float: left;
+}
+
 </style>
 </head>
 
 <body>
+  
   <div id="myDIV" class="header">
-    <h2>My Goals for Today</h2>
+    <div class = "head">
+        <a href = "/"><button style="font-size: xx-large;">Home</button></a>
+      <h1>My Goals for Today</h1>
+    </div>
     <input type="text" id="myInput" placeholder="Title...">
     <span onclick="newElement()" class="addBtn">Add</span>
   </div>
@@ -133,6 +152,11 @@ background-color: #bbb;
 
   </ul> 
 
+  <h2>Enter end of working hours: </h2>
+  <form method="POST">
+    <input  class = "input" name="text">
+    <input type="submit">
+  </form>
   <script>
     var myObj = [];
   // Create a "close" button and append it to each list item

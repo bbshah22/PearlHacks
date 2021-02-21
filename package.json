@@ -1,0 +1,23 @@
+{
+  "name": "flask-fire",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbshah22/PearlHacks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bbshah22/PearlHacks/issues"
+  },
+  "homepage": "https://github.com/bbshah22/PearlHacks#readme",
+  "devDependencies": {
+    "firebase-tools": "^9.4.0"
+  }
+}
